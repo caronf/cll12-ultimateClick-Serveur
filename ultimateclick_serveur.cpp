@@ -6,6 +6,7 @@ ultimateClick_serveur::ultimateClick_serveur(QWidget *parent) :
     ui(new Ui::ultimateClick_serveur)
 {
     ui->setupUi(this);
+    //Bonjour Félix
 }
 
 ultimateClick_serveur::~ultimateClick_serveur()
