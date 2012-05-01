@@ -11,8 +11,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        ultimateclick_serveur.cpp
+        ultimateclick_serveur.cpp \
+    tcpserveur.cpp
 
-HEADERS  += ultimateclick_serveur.h
+HEADERS  += ultimateclick_serveur.h \
+    tcpserveur.h
 
 FORMS    += ultimateclick_serveur.ui
