@@ -2,7 +2,8 @@
 #define ULTIMATECLICK_SERVEUR_H
 
 #include <QMainWindow>
-#include "tcpserveur.h"
+#include <QtGui>
+#include "cserveur.h"
 
 namespace Ui {
 class ultimateClick_serveur;
@@ -22,7 +23,7 @@ private slots:
 private:
     Ui::ultimateClick_serveur *ui;
     bool m_Actif;
-    TcpServeur* m_TcpServ;
+    CServeur* m_TcpServ;
 };
 
 #endif // ULTIMATECLICK_SERVEUR_H

@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
 
 TARGET = cll12-ultimateClick-Serveur
 TEMPLATE = app
@@ -12,9 +12,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         ultimateclick_serveur.cpp \
-    tcpserveur.cpp
+    cserveur.cpp \
+    thclient.cpp
 
 HEADERS  += ultimateclick_serveur.h \
-    tcpserveur.h
+    cserveur.h \
+    thclient.h
 
 FORMS    += ultimateclick_serveur.ui
