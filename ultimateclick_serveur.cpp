@@ -7,29 +7,14 @@ ultimateClick_serveur::ultimateClick_serveur(QWidget *parent) :
     ui(new Ui::ultimateClick_serveur)
 {
     ui->setupUi(this);
+    m_TcpServ = new CServeur();
+    m_TcpServ->listen(QHostAddress::Any, 55415);
+    srand(time(0));
 }
 
 ultimateClick_serveur::~ultimateClick_serveur()
 {
+    m_TcpServ->close();
+    delete m_TcpServ;
     delete ui;
-}
-
-void ultimateClick_serveur::on_btnStartStop_clicked()
-{
-    QString textBouton;
-
-    m_Actif = !m_Actif; // Inverse la valeur de m_Actif
-    if(m_Actif)
-    {
-        textBouton = "Stop";
-        m_TcpServ = new CServeur();
-        m_TcpServ->listen(QHostAddress::Any, 55415);
-    }
-    else
-    {
-        m_TcpServ->close();
-        textBouton = "Start!";
-    }
-
-    ui->btnStartStop->setText(textBouton); // Affiche le message approprié sur le bouton
 }

@@ -15,13 +15,14 @@ signals:
     void siClick(int ID);
     
 public slots:
-    void slResultats();
-    void slNouvCoords(int x, int y, int r);
+    void slJeu(int IDGagnant);
+    void slNouvCoords(ushort x, ushort y, ushort r);
     void run();
 
 private:
     int m_sockDesc;
     int m_IDcli;
+    bool m_EnCours, m_Mod;
     QByteArray m_ba;
 };
 

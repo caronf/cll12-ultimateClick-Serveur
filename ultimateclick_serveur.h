@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QtGui>
 #include "cserveur.h"
+#include <stdlib.h>
+#include <time.h>
 
 namespace Ui {
 class ultimateClick_serveur;
@@ -18,7 +20,6 @@ public:
     ~ultimateClick_serveur();
     
 private slots:
-    void on_btnStartStop_clicked();
 
 private:
     Ui::ultimateClick_serveur *ui;

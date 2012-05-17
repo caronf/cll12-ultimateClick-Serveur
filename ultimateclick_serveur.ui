@@ -38,17 +38,25 @@
    <string>ultimateClick_serveur</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="btnStartStop">
+   <widget class="QLabel" name="lblServeur">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>281</width>
-      <height>51</height>
+      <x>0</x>
+      <y>0</y>
+      <width>301</width>
+      <height>81</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>Start</string>
+     <string>SERVEUR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>
